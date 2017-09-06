@@ -6,7 +6,7 @@
 
 import UIKit
 
-//: • inicializadores:
+//: • Inicializadores:
 
 protocol SomeProtocol {
     init(someParameter: Int)
@@ -36,7 +36,7 @@ struct Person: Named, Aged {
 }
 
 func wishHappyBirthday(to celebrator: Named & Aged) {
-    print("Happy birthday, \(celebrator.name), you're \(celebrator.age)!")
+    //print("Happy birthday, \(celebrator.name), you're \(celebrator.age)!")
 }
 
 let birthdayPerson = Person(name: "Malcolm", age: 21)
