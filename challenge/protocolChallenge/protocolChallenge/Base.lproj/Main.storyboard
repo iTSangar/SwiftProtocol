@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="protocolChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="code" translatesAutoresizingMaskIntoConstraints="NO" id="pDU-vp-mcM">
+                                <rect key="frame" x="97" y="100" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="cl6-Iu-ced"/>
+                                    <constraint firstAttribute="width" constant="180" id="uRm-PE-j3z"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Para decifrar o símbolo acima, digite o código de segurança" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Byw-qW-apw">
+                                <rect key="frame" x="16" y="300" width="343" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="LxV-3R-OAo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Código de segurança" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09x-IY-xLz">
+                                <rect key="frame" x="16" y="351" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Sld-hP-BpY"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O código tá tudim errado 😂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sza-i3-097">
+                                <rect key="frame" x="16" y="389" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DIO-hT-4IC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.0027242621604883777" blue="0.059176501509942581" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wnz-lQ-9wd">
+                                <rect key="frame" x="16" y="418" width="343" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.72811788320541382" blue="0.49123847484588623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Lcv-ik-Z8G"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Matar minha curiosidade">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapAnswerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qCP-C1-1oR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sza-i3-097" firstAttribute="top" secondItem="09x-IY-xLz" secondAttribute="bottom" constant="8" id="25p-KG-2Hj"/>
+                            <constraint firstItem="Wnz-lQ-9wd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="8Y3-DQ-ywr"/>
+                            <constraint firstItem="sza-i3-097" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="AB0-7a-a1Q"/>
+                            <constraint firstAttribute="trailing" secondItem="Byw-qW-apw" secondAttribute="trailing" constant="16" id="Blk-e6-kYs"/>
+                            <constraint firstAttribute="trailing" secondItem="sza-i3-097" secondAttribute="trailing" constant="16" id="CKu-Pe-Cfh"/>
+                            <constraint firstItem="pDU-vp-mcM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="JvX-oK-Ga8"/>
+                            <constraint firstItem="09x-IY-xLz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QHz-RU-qYT"/>
+                            <constraint firstItem="pDU-vp-mcM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QXb-gt-Gya"/>
+                            <constraint firstItem="Wnz-lQ-9wd" firstAttribute="top" secondItem="09x-IY-xLz" secondAttribute="bottom" constant="37" id="cd2-EK-e1T"/>
+                            <constraint firstItem="09x-IY-xLz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="jqJ-R2-cfF"/>
+                            <constraint firstItem="Byw-qW-apw" firstAttribute="top" secondItem="pDU-vp-mcM" secondAttribute="bottom" constant="20" id="lwr-SV-xVy"/>
+                            <constraint firstItem="09x-IY-xLz" firstAttribute="top" secondItem="Byw-qW-apw" secondAttribute="bottom" constant="10" id="m4a-2A-u6f"/>
+                            <constraint firstItem="Byw-qW-apw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="vzD-5I-7li"/>
+                            <constraint firstAttribute="trailing" secondItem="Wnz-lQ-9wd" secondAttribute="trailing" constant="16" id="yPz-rG-dBC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton" destination="Wnz-lQ-9wd" id="7CF-Fb-0nu"/>
+                        <outlet property="codeImageView" destination="pDU-vp-mcM" id="fSI-Lc-aXV"/>
+                        <outlet property="errorMessageLabel" destination="sza-i3-097" id="hCM-RQ-rWK"/>
+                        <outlet property="passcodTextField" destination="09x-IY-xLz" id="qWz-XK-iVr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="code" width="337" height="295"/>
+    </resources>
+</document>
