@@ -211,6 +211,61 @@ struct Meat: Food { }
 
 /*:
  
+ Suponhamos que, em vez de ter apenas vaca e leão, temos centenas de animais. Implementar manualmente
+ uma função de comer em possíveis centenas de tipos é pesado, então vamos usar protocolos para contornar
+ isso.
  
  */
+
+protocol Carnivorous { }
+protocol Herbivorous { }
+protocol Omnivorous { }
+
+extension Carnivorous where Self: Animal {
+    func eat(food: Meat) {
+        // implementation
+    }
+}
+
+extension Omnivorous where Self: Animal {
+    func eat(food: Food) {
+        // implementation
+    }
+}
+
+extension Herbivorous where Self: Animal {
+    func eat(food: Grass) {
+        // implementation
+    }
+}
+
+/*:
+ 
+ ## Typealiases
+ 
+ Depois de definir vários animais, como 🦅, 🐯, 🦄 e 🐒 , podemos achar que estamos usando muitos dos
+ mesmos padrões. 
+ 
+ Podemos encadear protocolos juntos em alias tipo para encurtar o processo de declarar novos animais.
+ 
+ */
+
+typealias BigCat =  Animal & Mammal & Swimmable & Carnivorous
+typealias BirdOfPrey = Animal & Bird & Flyable & Carnivorous
+typealias Primate = Animal & Mammal & Swimmable & Omnivorous
+
+struct Gorilla: Primate { }
+struct Monkey: Primate { }
+struct Eagle: BirdOfPrey { }
+struct Hawk: BirdOfPrey { }
+struct Tiger: BigCat { }
+//struct Lion: BigCat { }
+
+/*:
+ 
+ Usar uma metodologia de protocol-first (POP) pode ser muito poderoso. 🌈 ✨ ❤️
+ 
+ */
+
+
 
