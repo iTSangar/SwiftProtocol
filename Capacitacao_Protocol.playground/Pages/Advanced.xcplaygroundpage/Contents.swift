@@ -104,7 +104,7 @@ extension Fish where Self: Animal {
 
 /*:
  
- E esses `extension` e `where` e `Self` ?? 😱
+ E esses `extension` e `Self` ?? 😱
  
  Em vez de forçar todos esses tipos a se adaptarem aos animais, estamos apenas implementando esses
  comportamentos padrão para essas classes, caso sejam também animais. Usando esse padrão, podemos
