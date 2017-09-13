@@ -8,8 +8,8 @@
 
 import UIKit
 
-// TODO:
 
+// TODO: Conformar com o protocolo contido na NextViewController
 class RootViewController: UITableViewController {
     
     override func viewDidLoad() {
@@ -25,7 +25,8 @@ class RootViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "nextSegueID" {
             if let nextVC = segue.destination as? NextViewController {
-                // TODO: Fill Closure property on NextViewController
+                // TODO: Preencher a propriedade delegate da NextViewController com a RootViewController (self)
+
                 
             }
         }

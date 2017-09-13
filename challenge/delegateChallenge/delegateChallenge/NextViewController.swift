@@ -8,9 +8,11 @@
 
 import UIKit
 
+// TODO: Criar o protocolo na NextViewController com uma função
+
 class NextViewController: UIViewController {
     
-    // TODO: Create closure property
+    // TODO: Criar um propriedade optional delegate na NextViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +26,7 @@ class NextViewController: UIViewController {
 
     @IBAction func doSomethingTapped(_ sender: UIButton) {
         print("Do something button tapped on Next view controller")
-        // TODO: Execute closure property
+        // TODO: Executar o delegate no clique do botão
     }
 
 }
