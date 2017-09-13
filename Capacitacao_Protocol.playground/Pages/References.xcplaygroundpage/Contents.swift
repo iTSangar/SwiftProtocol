@@ -13,6 +13,12 @@ import UIKit
  * [**Protocol Oriented Programming View in Swift** - Bob Lee](https://www.bobthedeveloper.io/blog/protocol-oriented-programming-view-in-swift)
  */
 
+//https://www.bobthedeveloper.io/blog/the-complete-understanding-of-swift-delegate-and-data-source
+
+// https://buildingvts.com/advanced-swift-protocols-d683cae12caf
+
+// https://github.com/heshamsalman/Animalia
+
 /*:
  ## Collaborators 🤓
  
