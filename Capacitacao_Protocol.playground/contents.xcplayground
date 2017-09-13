@@ -7,5 +7,6 @@
         <page name='Extras'/>
         <page name='Desafio'/>
         <page name='References'/>
+        <page name='Advanced'/>
     </pages>
 </playground>
